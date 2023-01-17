@@ -3,10 +3,10 @@
     padding: 0;
 }
 
-html, body{
+/*html, body{
     height: 100%;
     width: 100%;
-}
+}*/
 
 #img_fondo{
     position: fixed;
@@ -66,6 +66,7 @@ ul img{
     FLEX-WRAP: wrap;
     padding: 0.5rem;
     gap: 1%;
+    animation: appear 2s linear;
 }
 
 .contenedor_producto{
@@ -90,7 +91,7 @@ ul img{
     margin: 1rem 0;
 }
 
-#contacto{
+#redes{
     display: flex;
     height: 2rem;
     justify-content:space-evenly;
@@ -110,3 +111,21 @@ ul img{
     height: 100%;
     margin-right: 0.4rem;
 }
+
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+        transform: translate(0,5%);
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
